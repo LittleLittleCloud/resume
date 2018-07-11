@@ -1,0 +1,66 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+% \setCJKmainfont[ItalicFont={AR PL UKai CN}]{AR PL UMing CN} %设置中文默认字体
+% \setCJKsansfont{WenQuanYi Zen Hei} %设置文泉驿正黑字体作为中文无衬线字体
+% \setCJKmonofont{WenQuanYi Zen Hei Mono} %设置文泉驿等宽正黑字体作为中文打字机字体
+% \usepackage{fancyhdr}
+\begin{document}
+% \fancyhead{}
+\pagenumbering{gobble} % suppress displaying page number
+\pagestyle{plain}
+\name{张晓云}
+
+% {E-mail}{mobilephone}{homepage}
+\basicContactInfo{elendil@stu.xjtu.edu.cn}{(+86) 18991952901}
+% {E-mail}{mobilephone}
+% \basicContactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}
+ 
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{西安交通大学}}{2014/9 -- Present}
+\textit{计算机科学与技术}专业
+\begin{itemize}
+  \item GPA： 3.65
+  \item 排名: 4/157
+\end{itemize}
+\datedsubsection{\textbf{National University of Singapore}}{2016/8 -- 2016/12}
+\textit{School of Computing}
+\begin{itemize}
+  \item 交换生
+\end{itemize}
+
+\section{\faUsers\ 项目经验}
+\datedsubsection{\textbf{EDEN Lab}}{2015/8 -- Present}
+\role{实验室成员}{}
+\begin{itemize}
+  \item 使用\textit{SIR}模型模拟\textit{EBSN}网络中的事件传播，并据此建立推荐模型，达到了60\%以上的成功率。
+  \item 使用\textit{lasso}回归对事件描述建模，并建立了关于事件参与人数和事件描述的混合模型，证明了事件描述可以显著的影响事件参与人数。
+\end{itemize}
+
+\datedsubsection{\textbf{微软互联网工程院 苏州分院}}{2017/7 -- 2017/10}
+\role{实习生}{}
+\begin{itemize}
+  \item 设计并实现了一个日志分析工具，用于发现并分类设备OOBE过程中出现的错误
+  \item 预处理使用了\textit{tf-idf}，分类器使用了\textit{linear svm}，并使用了\textit{PCA}来发现未知错误
+  \item 准确率达到了98\%，至今仍运行良好
+\end{itemize}
+
+\datedsubsection{\textbf{National University of Singapore}}{2016/8 -- 2016/12}
+\begin{itemize}
+  \item 使用\textit{Ocaml}为\textit{mini-go}（\textit{Go}语言的子集）实现了一个编译器，同时使用\textit{Ocaml}实现了一个虚拟机用来运行编译后的程序。
+\end{itemize}
+
+\section{\faHeartO\ 获得奖励}
+\begin{itemize}
+  \item 国家奖学金 \textit{3/157} \hfill 2016/10
+  \item 彭康奖学金 \textit{5/157} \hfill 2015/10
+\end{itemize}
+\section{\faCogs\ 技能}
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python > ( C \& Rust) > C++ $\gg$ Java \& Go
+  \item 平台: Linux $\approx$ Windows
+  \item 英语：TOFEL 105
+\end{itemize}
+\end{document}
